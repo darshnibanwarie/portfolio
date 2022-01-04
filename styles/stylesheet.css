@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'montserrat', sans-serif;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 0em;
@@ -33,7 +33,6 @@ nav {
 }
 
 nav button {
-  font-family: 'montserrat', sans-serif;
   font-size: 1.1em;
   color: white;
   cursor: pointer;
@@ -129,25 +128,21 @@ nav>ul>li:nth-of-type(2) {
 }
 
 .introduction>a:nth-of-type(2) {
-  font-family: 'Bebas Neue';
   color: pink;
   text-shadow: 6px 3px 5px;
 }
 
 .introduction>a:nth-of-type(3) {
-  font-family: 'Bebas Neue';
   color: pink;
   text-shadow: 6px 3px 5px;
 }
 
 .introduction>a:nth-of-type(4) {
-  font-family: 'Bebas Neue';
   color: pink;
   text-shadow: 6px 3px 5px;
 }
 
 .introduction>a:last-of-type {
-  font-family: 'Bebas Neue';
   color: pink;
   text-shadow: 6px 3px 5px;
 }
@@ -160,8 +155,8 @@ p {
 }
 
 /* recentwork */
-.work>h3 {
-  font-size: 0.9em;
+.work>h2 {
+  font-size: 1em;
   color: grey;
 }
 
@@ -173,7 +168,7 @@ footer {
   padding-bottom: 2em;
 }
 
-footer h1 {
+footer h2 {
   font-size: 1.25em;
   line-height: 2.25em;
   color: #1a1b1d;
@@ -294,6 +289,11 @@ a:active {
   color: pink;
 }
 
+
+a:focus img {
+  border: 0.1em solid red;
+}
+
 /* responsive tings */
 @media (min-width:64em) {
   body {
@@ -311,7 +311,6 @@ a:active {
   }
 
   @media (min-width:64em) {
-    footer {    
+    footer {
       padding-bottom: 3em;
     }
-
