@@ -7,8 +7,8 @@
 
 body {
   font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
   padding-bottom: 0em;
   padding-top: 0em;
   margin: 0;
@@ -19,9 +19,10 @@ body {
 header {
   padding: 0em;
   margin: 0em;
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
   top: 0;
 }
 
@@ -29,7 +30,10 @@ header {
 /* nav */
 nav {
   order: -1;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 nav button {
@@ -44,8 +48,6 @@ nav button {
   transition: all 650ms ease;
   box-shadow: 0.5em 0.6em 0.7em gray;
   position: relative;
-  left: 14em;
-  bottom: 5em;
   z-index: 100;
 }
 
@@ -98,6 +100,13 @@ a:active {
 }
 
 nav>ul>li:nth-of-type(2) {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: .25em;
+}
+
+nav>ul>li:nth-of-type(3) {
   font-weight: bold;
   font-size: 1.25em;
   display: flex;
@@ -149,8 +158,8 @@ nav>ul>li:nth-of-type(2) {
 
 /* beschrijvingstekst */
 p {
-  font-size: 1em;
-  color: grey;
+  font-size: 1.2em;
+  color: #1B1B1B;
   margin-top: 0.6em;
 }
 
@@ -202,9 +211,13 @@ footer img {
 }
 
 .ing-top>ul>li {
-  color: grey;
+  color: #1B1B1B;
 }
 
+.dsn-ch>p {
+  font-style: italic;
+  font-weight: bold;
+}
 
 /* ommetje styling */
 .ommetje-top>img {
@@ -212,7 +225,7 @@ footer img {
 }
 
 .ommetje-top>ul>li {
-  color: grey;
+  color: #1B1B1B;
 }
 
 .ommetje-top iframe {
@@ -238,7 +251,7 @@ footer img {
 }
 
 .mohi-top>ul>li {
-  color: grey;
+  color: #1B1B1B;
 }
 
 /* fairhockey styling */
@@ -266,7 +279,7 @@ video {
 }
 
 .web-top>ul>li {
-  color: grey;
+  color: #1B1B1B;
 }
 
 .web-top>iframe {
@@ -297,20 +310,53 @@ a:focus img {
 /* responsive tings */
 @media (min-width:64em) {
   body {
-    padding-left: 8em;
-    padding-right: 8em;
+    padding-left: 4em;
+    padding-right: 4em;
     padding-bottom: 0em;
     padding-top: 0em;
   }
 
-  /* responsive header ofzo */
-  nav button {
-    position: relative;
-    left: 60em;
-    bottom: 5em;
-  }
+  /* responsive header */
+
 
   @media (min-width:64em) {
     footer {
       padding-bottom: 3em;
+    }
+
+    figcaption {
+      font-size: 0.8em;
+      color: #1B1B1B;
+      padding-bottom: 0.7em;
+
+    }
+
+    /* about me page */
+    .columns-wrap {
+      display: flex;
+      gap: 0.6em;
+    }
+
+    .title {
+      color:#8DC3F5 ;
+    }
+
+    .columns-wrap> .column > h3 {
+      color: #8DC3F5;
+      font-weight: bold;
+    }
+    
+    .columns-wrap> .column1 > h3 {
+      color: #8DC3F5;
+      font-weight: bold;
+    }
+    
+    .columns-wrap> .column2 > h3 {
+      color: #8DC3F5;
+      font-weight: bold;
+    }
+    
+    .columns-wrap> .column3 > h3 {
+      color: #8DC3F5;
+      font-weight: bold;
     }
