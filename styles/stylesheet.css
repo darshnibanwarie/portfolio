@@ -42,7 +42,7 @@ nav button {
   cursor: pointer;
   width: 5em;
   height: 2.5em;
-  background-color: black;
+  background-color: #1B1B1B;
   border: none;
   border-radius: 0.25em;
   transition: all 650ms ease;
@@ -86,7 +86,7 @@ nav.toonMenu ul {
 }
 
 nav a {
-  color: black;
+  color: #1B1B1B;
   text-decoration: none;
   font-size: 1em;
   display: flex;
@@ -124,11 +124,11 @@ nav>ul>li:nth-of-type(3) {
 .introduction>a {
   font-size: 2.25em;
   text-decoration: none;
-  color: black;
+  color: #1B1B1B;
 }
 
 .introduction>a:first-of-type {
-  color: black;
+  color: #1B1B1B;
   font-size: 2.25em;
   background-color: #fffaa3;
   padding-top: 0.3em;
@@ -137,23 +137,19 @@ nav>ul>li:nth-of-type(3) {
 }
 
 .introduction>a:nth-of-type(2) {
-  color: pink;
-  text-shadow: 6px 3px 5px;
+  background-color: #94B3FD;
 }
 
 .introduction>a:nth-of-type(3) {
-  color: pink;
-  text-shadow: 6px 3px 5px;
+  background-color: #94DAFF;
 }
 
 .introduction>a:nth-of-type(4) {
-  color: pink;
-  text-shadow: 6px 3px 5px;
+  background-color: pink;
 }
 
 .introduction>a:last-of-type {
-  color: pink;
-  text-shadow: 6px 3px 5px;
+  background-color: #99FEFF;
 }
 
 /* beschrijvingstekst */
@@ -173,6 +169,8 @@ p {
   max-width: 100%;
 }
 
+/* footer */
+
 footer {
   padding-bottom: 2em;
 }
@@ -180,7 +178,7 @@ footer {
 footer h2 {
   font-size: 1.25em;
   line-height: 2.25em;
-  color: #1a1b1d;
+  color: #1B1B1B;
   text-align: center;
 }
 
@@ -192,7 +190,14 @@ footer img {
   max-width: 100%;
 }
 
-.social-icons {
+.social> a {
+text-decoration: none;
+color: #49A7FF;
+}
+.social > a:hover {
+  color: #1B1B1B;
+}
+.social {
   display: flex;
   flex-direction: row;
   justify-content: center;
