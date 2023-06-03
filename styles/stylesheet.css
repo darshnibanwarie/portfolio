@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+  font-family: 'Open sans';
   padding-left: 5em;
   padding-right: 5em;
   padding-bottom: 0em;
@@ -288,6 +288,17 @@ video {
 }
 
 .web-top>iframe {
+  height: 58em;
+  max-width: 100%;
+}
+
+/* flashover styling */
+
+.flashover-top>img {
+  max-width: 100%;
+}
+
+.flashover-top>iframe {
   height: 58em;
   max-width: 100%;
 }
